@@ -508,23 +508,24 @@
           <!-- This is the simplest secure solution, but requires you to
             type your key passphrase in manually when performing a release. No biggie
             unless you want your CI server to decide when to release for you. -->
-          <mavenExecutorId>forked-path</mavenExecutorId>
+<!--           <mavenExecutorId>forked-path</mavenExecutorId> -->
 
         </configuration>
       </plugin>
 
       <!-- Deployment -->
-      <plugin>
-        <groupId>org.sonatype.plugins</groupId>
-        <artifactId>nexus-staging-maven-plugin</artifactId>
-        <version>1.6.8</version>
-        <extensions>true</extensions>
-        <configuration>
-          <serverId>sonatype-nexus-staging</serverId>
-          <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-          <autoReleaseAfterClose>true</autoReleaseAfterClose>
-        </configuration>
-      </plugin>
+<!--       <plugin> -->
+<!--         <groupId>org.sonatype.plugins</groupId> -->
+<!--         <artifactId>nexus-staging-maven-plugin</artifactId> -->
+<!--         <version>1.6.8</version> -->
+<!--         <extensions>true</extensions> -->
+<!--         <configuration> -->
+<!--           <serverId>sonatype-nexus-staging</serverId> -->
+<!--           <nexusUrl>https://builds.seal-software.net/</nexusUrl> -->
+<!--           <nexusUrl>https://oss.sonatype.org/</nexusUrl> -->
+<!--           <autoReleaseAfterClose>true</autoReleaseAfterClose> -->
+<!--         </configuration> -->
+<!--       </plugin> -->
 
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
