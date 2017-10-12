@@ -33,12 +33,12 @@
     <tag>HEAD</tag>
   </scm>
 
-  <distributionManagement>
-    <snapshotRepository>
-      <id>sonatype-nexus-snapshots</id>
-      <name>Sonatype Nexus snapshot repository</name>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-    </snapshotRepository>
+<!--   <distributionManagement> -->
+<!--     <snapshotRepository> -->
+<!--       <id>sonatype-nexus-snapshots</id> -->
+<!--       <name>Sonatype Nexus snapshot repository</name> -->
+<!--       <url>https://oss.sonatype.org/content/repositories/snapshots</url> -->
+<!--     </snapshotRepository> -->
     <!-- We do not deploy directly to the staging repository, but via the Nexus staging plugin -->
     <!--
     <repository>
@@ -47,7 +47,7 @@
       <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
     </repository>
     -->
-  </distributionManagement>
+<!--   </distributionManagement> -->
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
